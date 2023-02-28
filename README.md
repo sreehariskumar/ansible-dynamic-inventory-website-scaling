@@ -1,5 +1,7 @@
 # asg-rolling-update-using-ansible-dynamic-inventory
 
+![rolling-asg drawio](https://user-images.githubusercontent.com/68052722/221770211-cd683370-ba12-4496-927e-85f8e77805f4.png)
+
 ### Feature:
 
 If you’re looking to launch a website with high availability and scalability, Amazon EC2 Autoscaling Groups are a great option. However, managing multiple instances can be challenging, especially when you need to deploy new code or update the configuration.
