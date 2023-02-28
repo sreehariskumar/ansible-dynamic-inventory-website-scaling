@@ -59,3 +59,10 @@ The second play is named **“Deploying a site from github repo”**. This play 
 - **apache-restart**: This handler restarts the Apache web server service after the website files have been copied to the document root.
 - **apache-reload**: This handler reloads the Apache web server configuration after the website configuration files have been created or updated.
 - **up-delay**: This handler waits for the specified amount of time before restarting the web server service to allow the new instances to come up and start serving traffic.
+
+
+### Result
+You could see the contents of the website by accessing the end-point of the load balancer you’ve created. You can also point the end-point to a DNS name and access the domain name instead.
+
+### Conclusion
+Overall, this article has demonstrated how Ansible and AWS can be used together to automate the deployment process, reducing the time and effort required to deploy and manage web applications. By using Ansible to automate the deployment process, developers can focus on writing code and building new features, while Ansible handles the deployment and configuration of the application on the infrastructure.
