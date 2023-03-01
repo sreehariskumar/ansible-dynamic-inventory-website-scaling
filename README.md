@@ -38,7 +38,7 @@ This playbook has two plays:
 The first play is named “fetching instance details”. This play fetches the EC2 instance details of the instances in the Auto Scaling Group (ASG) and registers them to the Ansible inventory.
 
 #### Tasks:
-- ****gathering instance details**: This task uses the **“amazon.aws.ec2_instance_info”** module to fetch the EC2 instance details of instances in the ASG, and filters the instances based on their state and tags. The instances that match the filters are registered to the Ansible inventory using the **“register”** keyword.
+- **gathering instance details**: This task uses the **“amazon.aws.ec2_instance_info”** module to fetch the EC2 instance details of instances in the ASG, and filters the instances based on their state and tags. The instances that match the filters are registered to the Ansible inventory using the **“register”** keyword.
 - **creating dynamic inventory**: This task uses the **“add_host”** module to dynamically add the instances that were registered in the previous task to the **“asg_instances”** group in the Ansible inventory. This task sets some necessary SSH connection parameters and specifies the private key file to connect to the instances.
 - The **serial** keyword is used to specify the number of hosts to run the playbook on at the same time. In this case, serial: 1 is used to run the playbook on each host sequentially, meaning that the tasks in the playbook will be executed one at a time on each host instead of running them all simultaneously.
 We’ve used the same template files from a previous article.
