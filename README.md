@@ -1,6 +1,8 @@
 # asg-rolling-update-using-ansible-dynamic-inventory
 
-![rolling-asg drawio](https://user-images.githubusercontent.com/68052722/221770211-cd683370-ba12-4496-927e-85f8e77805f4.png)
+
+![rolling-asg drawio](https://user-images.githubusercontent.com/68052722/222046713-f86f9fbe-77b0-48d7-a660-56c488492480.png)
+
 
 ### Feature:
 
